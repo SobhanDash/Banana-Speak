@@ -1,0 +1,160 @@
+/* import font */
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Source+Sans+Pro:wght@400;600&display=swap');
+
+/* root */
+:root {
+    --primary: #FCE029;
+    --blue: #0A75BC;
+    --gray: #949699;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0px;
+}
+
+textarea {
+    width: 80%;
+    height: 10vh;
+    display: block;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+#output {
+    border: 2px solid black;
+    width: 80%;
+    height: 10vh;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+/* spaces */
+hr {
+    margin: 2rem 0rem;
+}
+
+.margin-md {
+    margin: 2rem 0rem;
+}
+
+/** container **/
+.container-fluid {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.container-center {
+    max-width: 600px;
+    margin: auto;
+    padding: 1rem 1rem;
+}
+
+/* links */
+.link {
+    box-sizing: border-box;
+    text-decoration: none;
+    width: max-content;
+    min-width: 140px;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    /* margin: 1rem  0rem; */
+}
+
+.link-primary {
+    background-color: var(--primary);
+    color: var(--blue);
+}
+
+/** lists **/
+
+.list-non-bullet {
+    list-style: none;
+}
+
+.list-item-inline {
+    display: inline;
+    padding: 0rem 0.5rem;
+}
+
+/* nav */
+.navigation {
+    background-color: var(--primary);
+    color: var(--blue);
+    padding: 2rem;
+    border-top-left-radius: 1rem;
+}
+
+.navigation .nav-brand {
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.navigation .nav-pills {
+    text-align: right;
+}
+
+.navigation .link {
+    color: white;
+}
+
+.navigation .active {
+    font-weight: bold;
+}
+
+/* header */
+.hero {
+    padding: 2rem;
+    padding-top: 5rem;
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+    font-family: 'Nerko One', cursive;
+}
+
+.hero .hero-ing {
+    max-width: 500px;
+    max-height: 80%;
+    display: block;
+    margin: auto;
+}
+
+.hero .hero-heading {
+    padding-top: 1rem;
+    color: var(--blue);
+
+}
+
+/* section */
+.section {
+    padding: 2rem;
+    margin: 0px;
+}
+
+.section h1 {
+    text-align: center;
+}
+
+/* footer */
+.footer {
+    background-color: var(--primary);
+    padding: 2rem 0rem;
+    text-align: center;
+    color: white;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.footer .link {
+    color: white;
+}
+
+.footer .footer-header {
+    font-weight: bold;
+    font-size: large;
+}
+
+.footer ul {
+    padding-inline-start: 0px;
+}
