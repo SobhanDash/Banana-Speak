@@ -1,0 +1,105 @@
+/* import font */
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Nerko+One&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+/* root */
+:root {
+    --primary: #F2C94C;
+    --blue: #0A75BC;
+    --black: #333333;
+    --width-break: 600px;
+}
+
+body {
+    font-family: 'Nerko One', cursive;
+    margin: 0px;
+    color: var(--blue);
+}
+
+/* nav */
+.navigation {
+    font-family: 'Kalam', cursive;
+    font-size: 3rem;
+    padding: 1rem;
+    background-color: var(--primary);
+    text-align: center;
+}
+
+main {
+    margin: auto;
+    padding: 1rem;
+    max-width: var(--width-break);
+}
+
+textarea {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    min-height: 20vh;
+    margin-top: 2rem;
+    font-size: larger;
+    font-family: 'Nerko One', cursive;
+}
+
+button {
+    background-color: var(--primary);
+    width: 100%;
+    min-height: 10vh;
+    padding: 2rem 1rem;
+    font-family: 'Kalam', cursive;
+    font-size: larger;
+    margin: 1rem 0rem;
+    border: none;
+}
+
+h1 {
+    font-size: larger;
+    margin: 0px;
+}
+
+#output {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 10vh;
+    max-height: 20vh;
+    border: 2px solid var(--black);
+    overflow: auto;
+}
+
+.list-non-bullet {
+    list-style: none;
+}
+
+.list-item-inline {
+    display: inline;
+    padding: 0rem 0.5rem;
+}
+
+footer {
+    background-color: var(--primary);
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    font-size: x-large;
+    position: fixed;
+}
+
+footer p {
+    max-width: var(--width-break);
+    margin: auto;
+}
+
+footer .link {
+    color: var(--blue);
+    text-decoration: none;
+    width: max-content;
+
+}
+
+footer ul {
+    padding-inline-start: 0px;
+}
