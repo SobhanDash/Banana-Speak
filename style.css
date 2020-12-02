@@ -1,73 +1,111 @@
 /* import font */
-@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Source+Sans+Pro:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Nerko+One&display=swap');
+
+* {
+    box-sizing: border-box;
+}
 
 /* root */
 :root {
-    --primary: #FCE029;
+    --primary: #F2C94C;
     --blue: #0A75BC;
-    --gray: #949699;
+    --black: #333333;
+    --darkblack: #000000;
+    --side: #C84BF1;
+    --width-break: 600px;
 }
 
 body {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Nerko One', cursive;
     margin: 0px;
-}
-
-textarea {
-    width: 80%;
-    height: 10vh;
-    display: block;
-    margin: 2rem;
-    padding: 2rem;
-}
-
-#output {
-    border: 2px solid black;
-    width: 80%;
-    height: 10vh;
-    margin: 2rem;
-    padding: 2rem;
-}
-
-/* spaces */
-hr {
-    margin: 2rem 0rem;
-}
-
-.margin-md {
-    margin: 2rem 0rem;
-}
-
-/** container **/
-.container-fluid {
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-.container-center {
-    max-width: 600px;
-    margin: auto;
-    padding: 1rem 1rem;
-}
-
-/* links */
-.link {
-    box-sizing: border-box;
-    text-decoration: none;
-    width: max-content;
-    min-width: 140px;
-    border-radius: 0.5rem;
-    padding: 0.5rem 1rem 0.5rem 1rem;
-    /* margin: 1rem  0rem; */
-}
-
-.link-primary {
-    background-color: var(--primary);
     color: var(--blue);
+    background: url('minion3.png'), var(--primary);
 }
 
-/** lists **/
+/* nav */
+.navigation {
+    font-family: 'Kalam', cursive;
+    font-size: 3rem;
+    padding: 1rem;
+    background-color: var(--primary);
+    text-align: center;
+}
 
+/* main */
+main {
+    margin: auto;
+    padding: 1rem;
+    max-width: var(--width-break);
+}
+
+
+
+/* textarea */
+textarea {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    min-height: 20vh;
+    margin-top: 2rem;
+    font-size: larger;
+    font-family: 'Nerko One', cursive;
+}
+
+/* button */
+button {
+    background-color: var(--primary);
+    width: 100%;
+    min-height: 10vh;
+    padding: 2rem 1rem;
+    font-family: 'Kalam', cursive;
+    font-size: larger;
+    margin: 1rem 0rem;
+    border: none;
+}
+
+/* h1 */
+h1 {
+    font-size: larger;
+    margin: 0px;
+    color: var(--darkblack);
+    font-family: 'Kalam', cursive;
+    text-align: center;
+    padding: 1rem 0rem;
+}
+
+/* paragraph */
+p {
+    max-width: var(--width-break);
+    margin: auto;
+    font-family: 'Kalam', cursive;
+    color: var(--darkblack);
+    font-size: large;
+    background-color: var(--blue);
+}
+
+img {
+    margin: 0px;
+    padding: 1rem 0rem;
+    min-width: 30%;
+    max-width: 100%;
+    min-height: 10vh;
+    max-height: 100%;
+    box-sizing: border-box;
+    display: block;
+}
+
+/* output textarea */
+#output {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 10vh;
+    max-height: 20vh;
+    border: 2px solid var(--black);
+    overflow: auto;
+    color: var(--darkblack);
+}
+
+/* list */
 .list-non-bullet {
     list-style: none;
 }
@@ -77,84 +115,24 @@ hr {
     padding: 0rem 0.5rem;
 }
 
-/* nav */
-.navigation {
-    background-color: var(--primary);
-    color: var(--blue);
-    padding: 2rem;
-    border-top-left-radius: 1rem;
-}
-
-.navigation .nav-brand {
-    font-weight: bold;
-    font-size: 1.1rem;
-    text-align: center;
-}
-
-.navigation .nav-pills {
-    text-align: right;
-}
-
-.navigation .link {
-    color: white;
-}
-
-.navigation .active {
-    font-weight: bold;
-}
-
-/* header */
-.hero {
-    padding: 2rem;
-    padding-top: 5rem;
-    text-align: center;
-    font-size: larger;
-    font-weight: bolder;
-    font-family: 'Nerko One', cursive;
-}
-
-.hero .hero-ing {
-    max-width: 500px;
-    max-height: 80%;
-    display: block;
-    margin: auto;
-}
-
-.hero .hero-heading {
-    padding-top: 1rem;
-    color: var(--blue);
-
-}
-
-/* section */
-.section {
-    padding: 2rem;
-    margin: 0px;
-}
-
-.section h1 {
-    text-align: center;
-}
-
 /* footer */
-.footer {
+footer {
     background-color: var(--primary);
-    padding: 2rem 0rem;
     text-align: center;
-    color: white;
-    border-bottom-right-radius: 1rem;
-    border-bottom-left-radius: 1rem;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    font-family: 'Kalam', cursive;
+    font-size: x-large;
 }
 
-.footer .link {
-    color: white;
+footer .link {
+    color: var(--blue);
+    text-decoration: none;
+    width: max-content;
+
 }
 
-.footer .footer-header {
-    font-weight: bold;
-    font-size: large;
-}
-
-.footer ul {
+footer ul {
     padding-inline-start: 0px;
 }
