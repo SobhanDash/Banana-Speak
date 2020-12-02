@@ -10,6 +10,8 @@
     --primary: #F2C94C;
     --blue: #0A75BC;
     --black: #333333;
+    --darkblack: #000000;
+    --side: #C84BF1;
     --width-break: 600px;
 }
 
@@ -17,6 +19,7 @@ body {
     font-family: 'Nerko One', cursive;
     margin: 0px;
     color: var(--blue);
+    background: url('minion3.png'), var(--primary);
 }
 
 /* nav */
@@ -28,12 +31,14 @@ body {
     text-align: center;
 }
 
+/* main */
 main {
     margin: auto;
     padding: 1rem;
     max-width: var(--width-break);
 }
 
+/* textarea */
 textarea {
     box-sizing: border-box;
     display: block;
@@ -44,6 +49,7 @@ textarea {
     font-family: 'Nerko One', cursive;
 }
 
+/* button */
 button {
     background-color: var(--primary);
     width: 100%;
@@ -55,11 +61,40 @@ button {
     border: none;
 }
 
+/* h1 */
 h1 {
     font-size: larger;
     margin: 0px;
+    color: var(--darkblack);
+    font-family: 'Kalam', cursive;
+    background-color: var(--blue);
+    text-align: center;
+    padding: 1rem 0rem;
 }
 
+/* paragraph */
+p {
+    max-width: var(--width-break);
+    margin: auto;
+    font-family: 'Kalam', cursive;
+    color: var(--darkblack);
+    font-size: large;
+    background-color: var(--blue);
+}
+
+img {
+    margin: 0px;
+    padding: 1rem 0rem;
+    padding-right: 1.5rem;
+    min-width: 30%;
+    max-width: var(--width-break);
+    min-height: 10vh;
+    max-height: 60vh;
+    box-sizing: border-box;
+    display: block;
+}
+
+/* output textarea */
 #output {
     box-sizing: border-box;
     width: 100%;
@@ -69,6 +104,7 @@ h1 {
     overflow: auto;
 }
 
+/* list */
 .list-non-bullet {
     list-style: none;
 }
@@ -78,19 +114,15 @@ h1 {
     padding: 0rem 0.5rem;
 }
 
+/* footer */
 footer {
     background-color: var(--primary);
     text-align: center;
     bottom: 0;
     width: 100%;
     padding: 1rem;
+    font-family: 'Kalam', cursive;
     font-size: x-large;
-    position: fixed;
-}
-
-footer p {
-    max-width: var(--width-break);
-    margin: auto;
 }
 
 footer .link {
