@@ -38,6 +38,8 @@ main {
     max-width: var(--width-break);
 }
 
+
+
 /* textarea */
 textarea {
     box-sizing: border-box;
@@ -67,7 +69,6 @@ h1 {
     margin: 0px;
     color: var(--darkblack);
     font-family: 'Kalam', cursive;
-    background-color: var(--blue);
     text-align: center;
     padding: 1rem 0rem;
 }
@@ -85,11 +86,10 @@ p {
 img {
     margin: 0px;
     padding: 1rem 0rem;
-    padding-right: 1.5rem;
     min-width: 30%;
-    max-width: var(--width-break);
+    max-width: 100%;
     min-height: 10vh;
-    max-height: 60vh;
+    max-height: 100%;
     box-sizing: border-box;
     display: block;
 }
@@ -102,6 +102,7 @@ img {
     max-height: 20vh;
     border: 2px solid var(--black);
     overflow: auto;
+    color: var(--darkblack);
 }
 
 /* list */
